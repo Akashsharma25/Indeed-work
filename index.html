@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="document.getElementById('home-nav').click();">
+    <header>
+      <nav>
+        <nav class="nav">
+          <ul class="navbar">
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/logo_top.svg"
+                  alt="brand-logo"
+                  class="brand-logo-top"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-solid fa-bars"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <aside class="sidebar">
+          <ul>
+            <li class="side-top-heading">spiffTest</li>
+            <li class="side-nav" id="home-nav">
+              <i class="fa-solid fa-house-chimney fa-sidebar"></i>Home
+            </li>
+            <li class="side-nav" id="edit-user-nav">
+              <i class="fa-solid fa-users fa-sidebar"></i>Create/Edit User
+            </li>
+            <li class="side-nav" id="logout-nav">
+              <i class="fa-solid fa-right-from-bracket fa-sidebar"></i>Logout
+            </li>
+          </ul>
+          <div class="side-footer-branding">
+            <p>by</p>
+            <img src="./assets/logo_bottom.svg" alt="logo-bottom" />
+          </div>
+        </aside>
+        <section class="right" id="content-area">
+          <!-- Content will be dynamically loaded here -->
+        </section>
+      </div>
+    </main>
+
+    <!--! Javascript -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

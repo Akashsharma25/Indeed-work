@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+:root {
+  --navbar-height: 8vh;
+  --navbar-padding-bottom: 5px;
+}
+.nav {
+  background-color: #133a61;
+  padding-bottom: var(--navbar-padding-bottom);
+  align-items: center;
+}
+
+.navbar {
+  list-style: none; /* Remove default list styling */
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 19px;
+  height: var(--navbar-height);
+}
+
+.navbar li {
+  margin: 10px; /* Padding around each list item */
+}
+
+.navbar a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold font for the text */
+}
+
+.brand-logo-top {
+  margin-top: 5px;
+}
+
+.fa-bars {
+  font-size: 1.5em; /* Larger icon size */
+  margin-left: 27px;
+  padding-top: 6px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 15% 80%;
+  gap: 40px;
+  height: calc(100vh - var(--navbar-height) - var(--navbar-padding-bottom));
+}
+
+/* side css */
+.sidebar {
+  position: relative; /* Ensure the parent is positioned */
+  padding-left: 10px;
+  box-shadow: 10px 0 15px -5px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  height: 100%;
+  overflow: hidden;
+}
+.side-top-heading {
+  padding: 15px;
+  border-bottom: 2px solid #f5f5f5;
+  cursor: pointer;
+}
+
+.side-nav {
+  padding: 15px;
+  margin-bottom: 5px;
+  margin-right: 8px;
+  color: rgb(81, 89, 91);
+  cursor: pointer;
+  .fa-sidebar {
+    padding-right: 10px;
+  }
+}
+.active-nav {
+  border: 1px solid inherit;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #1473ea;
+}
+.side-footer-branding {
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Take full width of the container */
+  background-color: #ffffff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align-last: center;
+  margin-left: -10px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: rgba(88, 89, 91);
+  cursor: pointer;
+}
+
+/*! Css for Home Nav using Sass  */
+
+h2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(68, 68, 68);
+  text-align: center;
+}
+.rightOne-select {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+
+  .right-one {
+    width: 223px;
+    height: 634px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .rightOne-divs {
+      height: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .right-one-three {
+      width: 10rem;
+      height: 8rem;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 4rem;
+      }
+    }
+    .right-one-four {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .fa-gear {
+        font-size: 3em;
+      }
+    }
+  }
+
+  .right-two {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    section {
+      width: 95%;
+      height: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .right-two-divs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .divs {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 231px;
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+          height: 136px;
+          h1 {
+            font-size: 20px;
+            font-weight: 400;
+            color: #184a7c;
+          }
+          div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            span {
+              text-align: center;
+              width: 50%;
+              margin: 1%;
+            }
+          }
+        }
+      }
+      .right-two-divs {
+        height: 28%;
+        width: 98%;
+      }
+    }
+  }
+}
+.containerTwo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(111, 29, 29, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-check {
+  font-size: 5em;
+  font-weight: 600;
+  color: #333;
+  margin-left: 85px;
+}
+.card-butten {
+  border: 1px solid #ccc;
+  height: 45px;
+  margin-bottom: -10px;
+}
+.span-one {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-right: 1px solid #ccc;
+}
+.span-two {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #184a7c;
+  color: white !important;
+}
+.card-butten-2 {
+  border: 1px solid #ccc;
+  height: 45px;
+  margin-bottom: -10px;
+  color: #184a7c;
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 75px;
+  background: linear-gradient(to right, transparent 50%, #b3d5ff 50%);
+}
+.card-butten-4 {
+  background-color: #00a814;
+  border: 1px solid #ccc;
+  height: 45px;
+  margin-bottom: -10px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 75px;
+}
+/*! CSS for Create/Edit user Nav  */
+
+.edit-user-nav {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.edit-user-nav h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.edit-user-nav table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.edit-user-nav th,
+.edit-user-nav td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.edit-user-nav th {
+  background-color: #f4f4f4;
+}
+
+.edit-user-nav tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.edit-user-nav tr:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-user-nav button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-user-nav button:hover {
+  background-color: #45a049;
+}
+
+.create-user-form {
+  background-color: #f4f4f4; /* Light grey background */
+  padding: 20px; /* Padding around the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 400px; /* Maximum width of the form */
+  margin: 20px auto; /* Centering the form */
+}
+
+.create-user-form h2 {
+  color: #333; /* Dark grey color for the heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.create-user-form input[type="text"],
+.create-user-form input[type="email"],
+.create-user-form select {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the inputs */
+  margin-bottom: 10px; /* Space between each input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded borders */
+}
+
+.create-user-form button {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the button */
+  background-color: #5c67f2; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded borders */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.create-user-form button:hover {
+  background-color: #4a54e1; /* Slightly darker blue on hover */
+}
+
+.span-two {
+  h1 {
+    color: white !important;
+  }
+}
